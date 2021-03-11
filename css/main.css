@@ -57,6 +57,27 @@
   font-style: normal;
   font-variant:initial;
 } 
+@font-face{
+  font-family: Bah-r;
+  src: url(../fonts/Bahnschrift-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+@font-face{
+  font-family: ms-pgothic;
+  src: url(../fonts/ms-pgothic_bigfontsite.com.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+
+@font-face{
+  font-family: sup;
+  src: url(../fonts/supermarket.ttf);
+  font-style: normal;
+  font-variant:initial;
+}
+
+
 /*html {
   scroll-behavior: smooth; 
 }*/
@@ -112,7 +133,34 @@ a:hover{
   padding-top: 0px; 
   background-color: transparent;
 } 
+header .navbar{
+  position: absolute;
+  top: 0;
+}
 
+header .navbar-nav .nav-item .nav-link{
+  color: #000b2c;
+  font-size: 22px;
+  font-family: my-b;
+  margin: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header .navbar-nav .nav-item.active .nav-link{
+  border-bottom: 3px solid #ff4900;
+}
+header .navbar-nav .nav-item:hover .nav-link{
+  border-bottom: 3px solid #ff4900;
+}
+
+.logox{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.logox img{
+  max-width: 120px;
+}
 footer{
   min-height: 400px;
   background-image: linear-gradient(to bottom, #112341, #112341, #112441, #122441, #122441, #10223f, #0f213e, #0d1f3c, #091b38, #061735, #031331, #020d2e);
@@ -209,6 +257,8 @@ footer .logo-bt img{
 }
 .sec7{
   background-color: #fefbfa;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .sec7 .b1 h1{
   color: #122341;
@@ -224,6 +274,10 @@ footer .logo-bt img{
   font-size: 36px;
   border-radius: 12px;
   background-color: #ff4a00;
+}
+.btn-order:hover{ 
+  color: #fff;
+  background-color: #df4b0f; 
 }
 .sec7 .b2{
   background-image: url(../images/Shape7.png); 
@@ -300,6 +354,13 @@ footer .logo-bt img{
   color: #fff;
   font-size: 24px;
 } 
+
+.sec5{
+  background-color: #fefbfa; 
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .sec5 .boxm h1{
   font-size: 80px;
   text-align: center;
@@ -345,16 +406,20 @@ footer .logo-bt img{
 }
 .sec4 .mbox p{
   font-family: my-r;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 .sec4 .mbox .box-org{
   background-color: #f2b59c;
-  padding: 30px;
+  padding: 25px;
   border: 2px solid #df4b0f;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 15px;
+  width: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sec4 .centerx {
   margin: auto; 
@@ -375,33 +440,42 @@ footer .logo-bt img{
 .sec3{
   background-color: #fefbfa; 
   background-image: url(../images/Shape3.png); 
-  background-size: 50% 80%; ;
+  background-size: 50% 90%; ;
   background-repeat: no-repeat;
-  background-position: left center ;
+  background-position: left top ;
   min-height: 400px;
   padding-bottom: 60px;
 }
+
+
+
 .sec3 .b1 h1{
   text-align: center;
   color: #fff;
   font-family: suk-b;
   font-size: 60px;
-  margin-top: 90px;
+  margin-top: 30px;
+  padding-top: 50px;
 }
 .sec3 .b2 h1{
   text-align: center;
   color: #122341;
   font-family: suk-b;
   font-size: 60px;
-  margin-top: 90px;
+  margin-top: 30px;
+  padding-top: 50px;
 }
 .bov{
-  margin-top: 45px;
+  margin-top: 20px;
   background-color: #233e6a;
   width: 100%;
   min-height: 120px; 
   margin-bottom: -40px;
   width: 80%;
+  padding-bottom: 15px;
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.50);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.50);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.50);
 }
 .bov .ctx{
   position: absolute;
@@ -420,8 +494,105 @@ footer .logo-bt img{
   margin-top: -62px;
   margin-bottom: 40px;
   text-align: center;
-  width: 65%;
+  width: 220px;
   color: #fff;
   font-size: 32px;
   font-family: impact;
+}
+.bov .des{
+  padding: 15px; 
+  background-color: #000b2c;
+  min-height: 150px;
+}
+.bov .des ul{
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0px;
+}
+.bov .des ul li{
+  font-family: suk-b;
+  color: #fff;
+  padding-left: 10px;
+}
+.bov .des ul li span{
+  font-family: impact;
+}
+
+.sec2{
+  background-color: #fefbfa; 
+  background-image: url(../images/Shape2.png); 
+  background-size: 56.5% 100%; ;
+  background-repeat: no-repeat;
+  background-position: right center ;
+  min-height: 880px;
+  padding-bottom: 60px;
+}
+.sec2 .lax{
+  font-family: suk-b;
+  color: #fff;
+  background-color: #ff4a00;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+}
+.sec2 ul{
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0px;
+}
+.sec2 ul li{
+  font-family: suk-b;
+  color: #fff; 
+  font-size: 18px;
+  line-height: 45px;
+  overflow-wrap: normal;
+}
+.sec2 h1{
+  font-family: Bah-r;
+  font-size: 60px;
+  color: #25316b;
+  display: inline-block;  
+  margin-top: 100px;
+}
+.sec2 h2{ 
+  font-size: 260px;  
+  color: #25316b;
+  display: inline-block;
+  font-family: ms-pgothic; 
+  margin-top:  -40px;
+  position: absolute;
+  margin-left: -30px;
+}
+.sec2 h3{ 
+  font-size:  50px;  
+  color: #25316b; 
+  font-family: sup;
+  padding-left: 200px;
+  margin-top:  -20px; 
+  margin-left: -30px;
+}
+.img-prc{
+  position: absolute;
+  right: 50px;
+  margin-top: -50px;
+}
+.sec1{ 
+  background-image: url(../images/bg.png); 
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right center ;
+  height: 90vh;
+  padding-top: 160px;
+}
+
+.sec1 h1{
+  font-family: impact;
+  color: #26326c;
+  font-size: 180px;
+}
+.sec1 p{
+  font-family: suk-b;
+  color: #000000;
+  font-size: 40px;
 }
