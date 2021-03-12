@@ -581,9 +581,8 @@ footer .logo-bt img{
   background-image: url(../images/bg.png); 
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: right center ;
-  height: 90vh;
-  padding-top: 160px;
+  background-position: top center ;
+   padding-top: 160px;
 }
 
 .sec1 h1{
